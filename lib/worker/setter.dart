@@ -355,7 +355,7 @@ void addModel(BuildContext context, Function setState) async {
         networkError = true;
         return false;
       }
-      var endpoint = "https://ollama.com/library/";
+      var endpoint = "https://mythworx.com/library/";
       if (kIsWeb) {
         if (!(prefs!.getBool("allowWebProxy") ?? false)) {
           bool returnValue = false;
@@ -391,7 +391,7 @@ void addModel(BuildContext context, Function setState) async {
           if (!returnValue) return false;
           prefs!.setBool("allowWebProxy", true);
         }
-        endpoint = "https://end.jhubi1.com/ollama-proxy/";
+        endpoint = "https://end.jhubi1.com/mythworx-proxy/";
       }
       http.Response response;
       try {

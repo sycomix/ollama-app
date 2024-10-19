@@ -1,6 +1,6 @@
 {
     "@@locale": "en",
-    "appTitle": "Ollama",
+    "appTitle": "Mythworx",
     "@appTitle": {
         "description": "Title of the application",
         "context": "Visible in the side bar"
@@ -171,7 +171,7 @@
         "context": "Visible in the model dialog"
     },
     "modelDialogAddAllowanceTitle": "Allow Proxy",
-    "modelDialogAddAllowanceDescription": "Ollama App must check if the entered model is valid. For that, we normally send a web request to the Ollama model list and check the status code, but because you're using the web client, we can't do that directly. Instead, the app will send the request to a different api, hosted by JHubi1, to check for us.\nThis is a one-time request and will only be sent when you add a new model.\nYour IP address will be sent with the request and might be stored for up to ten minutes to prevent spamming with potential harmful intentions.\nIf you accept, your selection will be remembered in the future; if not, nothing will be sent and the model won't be added.",
+    "modelDialogAddAllowanceDescription": "Mythworx App must check if the entered model is valid. For that, we normally send a web request to the Mythworx model list and check the status code, but because you're using the web client, we can't do that directly. Instead, the app will send the request to a different api, hosted by JHubi1, to check for us.\nThis is a one-time request and will only be sent when you add a new model.\nYour IP address will be sent with the request and might be stored for up to ten minutes to prevent spamming with potential harmful intentions.\nIf you accept, your selection will be remembered in the future; if not, nothing will be sent and the model won't be added.",
     "@modelDialogAddAllowanceDescription": {
         "description": "Description of the allow proxy dialog",
         "context": "Visible in the model dialog"
@@ -197,7 +197,7 @@
             }
         }
     },
-    "modelDialogAddAssuranceDescription": "Pressing 'Add' will download the model '{model}' directly from the Ollama server to your host.\nThis can take a while depending on your internet connection. The action cannot be canceled.\nIf the app is closed during the download, it'll resume if you enter the name into the model dialog again.",
+    "modelDialogAddAssuranceDescription": "Pressing 'Add' will download the model '{model}' directly from the Mythworx server to your host.\nThis can take a while depending on your internet connection. The action cannot be canceled.\nIf the app is closed during the download, it'll resume if you enter the name into the model dialog again.",
     "@modelDialogAddAssuranceDescription": {
         "description": "Description of the add model assurance dialog",
         "context": "Visible in the model dialog",
@@ -289,7 +289,7 @@
         "description": "Title of the interface settings section",
         "context": "Visible in the settings view"
     },
-    "settingsDescriptionInterface": "Edit how Ollama App looks and behaves.",
+    "settingsDescriptionInterface": "Edit how Mythworx App looks and behaves.",
     "@settingsDescriptionInterface": {
         "description": "Description of the interface settings section",
         "context": "Visible in the settings view"
@@ -319,7 +319,7 @@
         "description": "Title of the about settings section",
         "context": "Visible in the settings view"
     },
-    "settingsDescriptionAbout": "Check for updates and learn more about Ollama App.",
+    "settingsDescriptionAbout": "Check for updates and learn more about Mythworx App.",
     "@settingsDescriptionAbout": {
         "description": "Description of the about settings section",
         "context": "Visible in the settings view"
@@ -476,7 +476,7 @@
         "description": "Text displayed as description for generate titles toggle",
         "context": "Visible in the settings view"
     },
-    "settingsEnableEditing": "Enable editing of messages",
+    "settingsEnableEditing": "Message editing",
     "@settingsEnableEditing": {
         "description": "Text displayed as description for enable editing toggle",
         "context": "Visible in the settings view"
@@ -562,9 +562,9 @@
         "description": "Text displayed as description for device theme option",
         "context": "Visible in the settings view"
     },
-    "settingsThemeOllama": "Ollama",
+    "settingsThemeOllama": "Mythworx",
     "@settingsThemeOllama": {
-        "description": "Text displayed as description for Ollama theme option",
+        "description": "Text displayed as description for Mythworx theme option",
         "context": "Visible in the settings view"
     },
     "settingsTemporaryFixes": "Temporary interface fixes",
@@ -724,7 +724,7 @@
         "description": "Title of the update dialog",
         "context": "Visible in the settings view"
     },
-    "settingsUpdateDialogDescription": "A new version of Ollama is available. Do you want to download and install it now?",
+    "settingsUpdateDialogDescription": "A new version of Mythworx is available. Do you want to download and install it now?",
     "@settingsUpdateDialogDescription": {
         "description": "Description of the update dialog",
         "context": "Visible in the settings view"
@@ -764,7 +764,7 @@
         "description": "Text displayed as description for licenses button",
         "context": "Visible in the settings view"
     },
-    "settingsVersion": "Ollama App v{version}",
+    "settingsVersion": "Mythworx App v{version}",
     "@settingsVersion": {
         "description": "Text displayed as description for version",
         "context": "Visible in the settings view",

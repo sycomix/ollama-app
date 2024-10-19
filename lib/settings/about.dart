@@ -157,7 +157,7 @@ class _ScreenSettingsAboutState extends State<ScreenSettingsAbout> {
                                     child: ClipRRect(
                                   borderRadius: BorderRadius.circular(28),
                                   child: LicensePage(
-                                      applicationName: "Ollama App",
+                                      applicationName: "Mythworx App",
                                       applicationVersion: currentVersion,
                                       applicationIcon: icon,
                                       applicationLegalese: legal),
@@ -166,7 +166,7 @@ class _ScreenSettingsAboutState extends State<ScreenSettingsAbout> {
                         } else {
                           showLicensePage(
                               context: context,
-                              applicationName: "Ollama App",
+                              applicationName: "Mythworx App",
                               applicationVersion: currentVersion,
                               applicationIcon: icon,
                               applicationLegalese: legal);

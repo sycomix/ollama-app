@@ -1,4 +1,4 @@
-package com.freakurl.apps.ollama
+package com.freakurl.apps.mythworx
 
 import io.flutter.embedding.android.FlutterActivity
 

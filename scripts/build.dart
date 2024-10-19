@@ -6,8 +6,8 @@ void main() async {
   Directory.current = Directory(Platform.script.toFilePath()).parent.parent;
   String flutterExecutable = Platform.isWindows ? 'flutter.bat' : 'flutter';
 
-  print("Build script for Ollama App by JHubi1");
-  print("Report issues at: https://github.com/JHubi1/ollama-app/issues");
+  print("Build script for Mythworx App by JHubi1");
+  print("Report issues at: https://github.com/JHubi1/mythworx-app/issues");
 
   print('----------');
 
@@ -19,7 +19,7 @@ void main() async {
   var version = versionLine.split(':').last.trim().split('+').first.trim();
   var versionCode = versionLine.split(':').last.trim().split('+')[1].trim();
   print(
-      "Building Ollama App v$version (build $versionCode) - this may take a while");
+      "Building Mythworx App v$version (build $versionCode) - this may take a while");
 
   print('----------');
 
@@ -42,7 +42,7 @@ void main() async {
   // await execute(
   //     'Windows x64 installer',
   //     'iscc.exe',
-  //     ['windows_installer/ollama.iss', '/qp', '/dAppVersion=$version'],
+  //     ['windows_installer/mythworx.iss', '/qp', '/dAppVersion=$version'],
   //     "  > Inno Setup is not installed. Please install it from https://www.jrsoftware.org/isdl.php#stable\n     Then add the Inno Setup directory to your PATH environment variable.");
 
   // ----------
@@ -60,7 +60,7 @@ void main() async {
   //     'Windows arm64 installer',
   //     'iscc.exe',
   //     [
-  //       'windows_installer/ollama.iss',
+  //       'windows_installer/mythworx.iss',
   //       '/qp',
   //       '/dAppVersion=$version',
   //       '/dAppArchitectures=arm64'
@@ -78,10 +78,10 @@ void main() async {
     await outputDir.create();
 
     await copyFile('build\\app\\outputs\\flutter-apk\\app-release.apk',
-        'build\\.output\\ollama-android-v$version.apk');
+        'build\\.output\\mythworx-android-v$version.apk');
     await copyFile(
-        'build\\windows\\x64\\runner\\ollama-windows-x64-v$version.exe',
-        'build\\.output\\ollama-windows-x64-v$version.exe');
+        'build\\windows\\x64\\runner\\mythworx-windows-x64-v$version.exe',
+        'build\\.output\\mythworx-windows-x64-v$version.exe');
     print('- done');
   } catch (_) {
     print('- failed');

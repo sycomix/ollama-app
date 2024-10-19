@@ -49,7 +49,7 @@ class _ScreenSettingsExportState extends State<ScreenSettingsExport> {
                           Icons.upload_rounded, () async {
                         selectionHaptic();
                         var name =
-                            "ollama-export-${DateFormat('yyyy-MM-dd-H-m-s').format(DateTime.now())}.json";
+                            "mythworx-export-${DateFormat('yyyy-MM-dd-H-m-s').format(DateTime.now())}.json";
                         var content =
                             jsonEncode(prefs!.getStringList("chats") ?? []);
                         if (kIsWeb) {
@@ -74,7 +74,7 @@ class _ScreenSettingsExportState extends State<ScreenSettingsExport> {
                             path = (await file_selector
                                     .getSaveLocation(acceptedTypeGroups: [
                               const file_selector.XTypeGroup(
-                                  label: "Ollama App File",
+                                  label: "Mythworx App File",
                                   extensions: ["json"])
                             ], suggestedName: name))
                                 ?.path;
@@ -142,7 +142,7 @@ class _ScreenSettingsExportState extends State<ScreenSettingsExport> {
                                                         const file_selector
                                                             .XTypeGroup(
                                                             label:
-                                                                "Ollama App File",
+                                                                "Mythworx App File",
                                                             extensions: [
                                                               "json"
                                                             ])

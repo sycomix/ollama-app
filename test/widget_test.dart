@@ -10,7 +10,7 @@ void main() {
     bool clicked = false;
     await tester.pumpWidget(MaterialApp(
         home: Scaffold(
-            body: button(text, Icons.add_rounded, () {
+            body: labelLarge(text, Icons.add_rounded, () {
       clicked = true;
     }))));
 

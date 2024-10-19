@@ -1,1 +1,1 @@
-Chatta con un server Ollama
+Chatta con un server Mythworx

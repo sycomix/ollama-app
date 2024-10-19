@@ -43,12 +43,12 @@ import 'package:universal_html/html.dart' as html;
 
 // use host or not, if false dialog is shown
 const bool useHost = false;
-// host of ollama, must be accessible from the client, without trailing slash
+// host of mythworx, must be accessible from the client, without trailing slash
 // ! will always be accepted as valid, even if [useHost] is false
 const String fixedHost = "http://example.com:11434";
 // use model or not, if false selector is shown
 const bool useModel = false;
-// model name as string, must be valid ollama model!
+// model name as string, must be valid mythworx model!
 const String fixedModel = "gemma";
 // recommended models, shown with a star in model selector
 const List<String> recommendedModels = ["gemma", "llama3"];
@@ -128,7 +128,7 @@ class _AppState extends State<App> {
         await FlutterDisplayMode.setHighRefreshRate();
       } catch (_) {}
 
-      SharedPreferences.setPrefix("ollama.");
+      SharedPreferences.setPrefix("mythworx.");
       SharedPreferences tmp = await SharedPreferences.getInstance();
       setState(() {
         prefs = tmp;

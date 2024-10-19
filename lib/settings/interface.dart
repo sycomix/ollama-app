@@ -393,7 +393,7 @@ class _ScreenSettingsInterfaceState extends State<ScreenSettingsInterface> {
                                           .settingsThemeDevice),
                                       icon: const Icon(Icons.devices_rounded)),
                                   ButtonSegment(
-                                      value: "ollama",
+                                      value: "mythworx",
                                       label: Text(AppLocalizations.of(context)!
                                           .settingsThemeOllama),
                                       icon: const ImageIcon(
@@ -402,7 +402,7 @@ class _ScreenSettingsInterfaceState extends State<ScreenSettingsInterface> {
                               selected: {
                                   (prefs?.getBool("useDeviceTheme") ?? false)
                                       ? "device"
-                                      : "ollama"
+                                      : "mythworx"
                                 },
                               onSelectionChanged: (p0) async {
                                 selectionHaptic();
@@ -475,7 +475,7 @@ class _ScreenSettingsInterfaceState extends State<ScreenSettingsInterface> {
                                         }, onLongTap: () {
                                           selectionHaptic();
                                           launchUrl(Uri.parse(
-                                              "https://github.com/JHubi1/ollama-app/issues/26"));
+                                              "https://github.com/JHubi1/mythworx-app/issues/26"));
                                         }),
                                         const SizedBox(height: 16)
                                       ]),

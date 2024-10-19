@@ -1,5 +1,5 @@
-name: ollama_app
-description: "A modern and easy-to-use client for Ollama"
+name: mythworx_app
+description: "A MythWorx AI Client"
 publish_to: 'none'
 version: 1.2.0+9
 

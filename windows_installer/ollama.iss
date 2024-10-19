@@ -1,9 +1,9 @@
-; Inno Setup script for Ollama App, created by JHubi1
+; Inno Setup script for Mythworx App, created by JHubi1
 
-#define AppName "Ollama App"
+#define AppName "Mythworx App"
 #define AppPublisher "JHubi1"
 #define AppURL "https://jhubi1.com"
-#define AppExeName "ollama.exe"
+#define AppExeName "mythworx.exe"
 
 ; #define AppVersion "1.0.1"
 ; #define AppArchitectures "x64"
@@ -43,10 +43,10 @@ UninstallDisplayName={#AppName}
 
 DefaultDirName={autopf}\OllamaApp
 OutputDir=build\windows\{#AppArchitectures}\runner
-OutputBaseFilename=ollama-windows-{#AppArchitectures}-v{#AppVersion}
+OutputBaseFilename=mythworx-windows-{#AppArchitectures}-v{#AppVersion}
 
-AppSupportURL=https://github.com/JHubi1/ollama-app/issues
-AppUpdatesURL=https://github.com/JHubi1/ollama-app/releases
+AppSupportURL=https://github.com/JHubi1/mythworx-app/issues
+AppUpdatesURL=https://github.com/JHubi1/mythworx-app/releases
 
 LicenseFile=windows_installer\docs\license.txt
 InfoBeforeFile=windows_installer\docs\before.txt
@@ -112,7 +112,7 @@ procedure CurUninstallStepChanged (CurUninstallStep: TUninstallStep);
             begin
                 mres := MsgBox('Do you want to Remove settings?', mbConfirmation, MB_YESNO or MB_DEFBUTTON2)
                 if mres = IDYES then
-                    DelTree(ExpandConstant('{userappdata}\JHubi1\Ollama App'), True, True, True);
+                    DelTree(ExpandConstant('{userappdata}\JHubi1\Mythworx App'), True, True, True);
         end;
     end;
 end;

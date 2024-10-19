@@ -60,13 +60,13 @@ jobs:
         run: flutter build apk --obfuscate --split-debug-info=build/debugAndroid
       - name: Preparing files
         run: |
-          cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/ollama-android-v${{ steps.get_flutter_version.outputs.version_number }}.apk
+          cp build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/mythworx-android-v${{ steps.get_flutter_version.outputs.version_number }}.apk
       - name: Uploading APK
         uses: actions/upload-artifact@v4
         with:
-          name: ollama-android
+          name: mythworx-android
           path: |
-            build/app/outputs/flutter-apk/ollama-android-v${{ steps.get_flutter_version.outputs.version_number }}.apk
+            build/app/outputs/flutter-apk/mythworx-android-v${{ steps.get_flutter_version.outputs.version_number }}.apk
   build-windows-x64:
     name: Building for Windows x64
     if: ${{ github.event.inputs.buildWindowsX64 == 'true' }}
@@ -88,13 +88,13 @@ jobs:
       - name: Running installer build
         uses: Minionguyjpro/Inno-Setup-Action@v1.2.2
         with:
-          path: .\windows_installer\ollama.iss
+          path: .\windows_installer\mythworx.iss
           options: /O+ /dAppVersion=${{ steps.get_flutter_version.outputs.version_number }}
       - name: Uploading installer
         uses: actions/upload-artifact@v4
         with:
-          name: ollama-windows-x64
-          path: build\windows\x64\runner\ollama-windows-x64-v${{ steps.get_flutter_version.outputs.version_number }}.exe
+          name: mythworx-windows-x64
+          path: build\windows\x64\runner\mythworx-windows-x64-v${{ steps.get_flutter_version.outputs.version_number }}.exe
   build-linux-x64:
     name: Building for Linux x64
     if: ${{ github.event.inputs.buildLinuxX64 == 'true' }}
@@ -120,12 +120,12 @@ jobs:
       - name: Creating archive
         run: |
           cd build/linux/x64/release/bundle
-          tar -czf ollama-linux-x64-v${{ steps.get_flutter_version.outputs.version_number }}.tar.gz *
+          tar -czf mythworx-linux-x64-v${{ steps.get_flutter_version.outputs.version_number }}.tar.gz *
       - name: Uploading archive
         uses: actions/upload-artifact@v4
         with:
-          name: ollama-linux-x64
-          path: build/linux/x64/release/bundle/ollama-linux-x64-v${{ steps.get_flutter_version.outputs.version_number }}.tar.gz
+          name: mythworx-linux-x64
+          path: build/linux/x64/release/bundle/mythworx-linux-x64-v${{ steps.get_flutter_version.outputs.version_number }}.tar.gz
   bundle:
     name: Creating bundle
     runs-on: ubuntu-latest
@@ -141,5 +141,5 @@ jobs:
       - name: Bundling files
         uses: actions/upload-artifact@v4
         with:
-          name: ollama
+          name: mythworx
           path: ./
